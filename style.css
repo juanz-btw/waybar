@@ -105,7 +105,7 @@ tooltip {
 tooltip label {
   color: white;
 }
-/* El solcito y el porcentaje: se redondea solo a la izquierda y no se separa a la derecha */
+
 #backlight {
   border-radius: 8px 0px 0px 8px;
   padding: 5px 4px 5px 8px;
@@ -113,7 +113,6 @@ tooltip label {
   margin: 5px 0px 5px 0px; 
 }
 
-/* El slider: se pega al solcito, se redondea a la derecha y acá sí metemos el espacio de 10px */
 #backlight-slider {
   border-radius: 0px 8px 8px 0px;
   padding: 5px 8px 5px 4px;
@@ -121,7 +120,6 @@ tooltip label {
   margin: 5px 10px 5px 0px; 
 }
 
-/* --- Estilos internos del slider (idénticos a tu foto) --- */
 #backlight-slider slider {
   all: unset;
   min-height: 0;
