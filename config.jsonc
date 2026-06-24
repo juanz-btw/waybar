@@ -21,19 +21,19 @@
       "tooltip-format": "{controller_alias}\t{controller_address}",
       "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
       "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-      "on-click": "exec ghostty --title=bluetui -e bluetui"
+      "on-click": "exec ghostty  --title=bluetui -e bluetui"
     },
     "cpu": {
         "interval": 10,
         "format": " {}%",
         "max-length": 10,
-        "on-click": "exec ghostty --title=btop -e btop"
+        "on-click": "exec st btop"
     },
     "memory": {
         "interval": 30,
         "format": " {percentage}%",
         "tooltip-format": "{used:0.1f}G/{total:0.1f}G used",
-        "on-click": "exec ghostty --title=htop -e htop",
+        "on-click": "exec st htop",
     },
     "network": {
         "format": "",
@@ -55,7 +55,7 @@
           "today": "<span color='#75f1fa'><b>{}</b></span>"
         }
       },
-      "on-click": "exec chromium --app=https://calendar.google.com"
+      "on-click": "exec firefox"
     },
     "pulseaudio": {
         "format": "{volume}% {icon}",
@@ -87,20 +87,18 @@
         "custom/media-time"
       ]
     },
-    "custom/media-now-playing": {
-      "exec": "~/.config/waybar/custom_modules/media/media-now-playing.sh",
-      "escape": true,
-      "tooltip": false,
-      "on-click": "playerctl play-pause",
-      "on-click-middle": "playerctl previous",
-      "on-click-right": "playerctl next",
-    },
-    "custom/media-animation": {
-      "exec": "~/.config/waybar/custom_modules/media/media-animation.sh",
-      "tooltip": false,
+   "custom/media-now-playing": {
+        "exec": "~/.config/waybar/custom_modules/media/media-now-playing.sh",
+        "interval": 2,
+        "escape": true,
+        "tooltip": false,
+        "on-click": "playerctl play-pause",
+        "on-click-middle": "playerctl previous",
+        "on-click-right": "playerctl next"
     },
     "custom/media-animation": {
         "exec": "~/.config/waybar/custom_modules/media/media-animation.sh",
+        "interval": 1,
         "tooltip": false
     },
     "custom/media-time": {
