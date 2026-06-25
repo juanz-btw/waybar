@@ -144,7 +144,7 @@ tooltip label {
 }
 
 #custom-powermenu {
-    background-color: @color1; /* O podés usar un color fijo como #ff5555 si preferís que sea rojo */
+    background-color: @color1; 
     color: #ffffff;
     border-radius: 8px;
     padding: 0px 12px;
@@ -152,5 +152,5 @@ tooltip label {
 }
 
 #custom-powermenu:hover {
-    background-color: @color2; /* Cambia de color cuando le pasás el mouse por arriba */
+    background-color: @color2; 
 }
