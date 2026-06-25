@@ -2,7 +2,7 @@
     "layer": "top",
     "modules-left": ["hyprland/workspaces", "group/media"],
     "modules-center": ["clock"],
-    "modules-right": ["hyprland/submap", "backlight", "backlight/slider", "group/volume", "battery", "bluetooth", "network", "cpu", "memory"],
+    "modules-right": ["hyprland/submap", "backlight", "backlight/slider", "group/volume", "battery", "bluetooth", "network", "cpu", "memory", "custom/powermenu"],
     "hyprland/window": {
         "max-length": 50
     },
@@ -124,5 +124,11 @@
             "backlight",
             "backlight/slider"
         ]
-    }
+    },
+
+    "custom/powermenu": {
+    "format": "󰐥",
+    "on-click": "~/.config/rofi/powermenu.sh",
+    "tooltip": false
+}
 }
