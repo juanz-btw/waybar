@@ -17,7 +17,7 @@ sudo pacman -S st btop htop
 git clone https://github.com/juanz-btw/waybar.git 
 
 mv waybar ~/.config/
-
+'''
 file structure 
 
 ~/.config/
