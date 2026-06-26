@@ -8,7 +8,10 @@ I'm still working on making a documentación of how to make everything work for 
 #fonts
 sudo pacman -S ttf-nerd-fonts-symbols-common otf-font-awesome ttf-jetbrains-mono-nerd
 
-audio+brightness control 
+#menu
+sudo pacman -S rofi
+
+#audio+brightness control 
 sudo pacman -S pavucontrol playerctl
 
 #sys información 
@@ -17,7 +20,11 @@ sudo pacman -S st btop htop
 
 git clone https://github.com/juanz-btw/waybar.git 
 
+mkdir -p ~/.config
+
 mv waybar ~/.config/
+
+chmod +x ~/.config/waybar/custom_modules/powermenu.sh
 
 file structure 
 
